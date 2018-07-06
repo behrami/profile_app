@@ -1,0 +1,50 @@
+<%= form_for :user, url: edit_user_path, method: :post, html: {id: 'signUpForm'} do |f| %>
+
+  <p>
+    <%= f.text_field :first_name, placeholder: 'First Name', class: "form-control"%>
+  </p>
+
+  <p>
+    <%= f.text_field :last_name, placeholder: 'Last Name', class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.email_field :email, placeholder: 'Email', class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.text_field :phone, placeholder: 'Phone Number', class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.text_field :title, placeholder: 'Title', class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.text_area :summary, placeholder: 'Tell me about yourself', class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.text_field :linkedin, placeholder: 'LinkedIn Profile Link', class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.text_field :github, placeholder: 'Github Profile Link', class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.text_field :picture, placeholder: 'Enter Link to 200x200 Picture', class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.password_field :password, placeholder: 'Password', class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.password_field :password_confirmation, placeholder: 'Confirm Password', class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.submit 'Sign Up', class: "btn btn-primary", id: "signUpSubmit" %>
+  </p>
+<% end %>
