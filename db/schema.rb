@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 2018_07_06_002111) do
     t.text "summary"
     t.string "phone"
     t.string "email"
+    t.string "address"
     t.string "linkedin"
     t.string "github"
     t.string "password_digest"
