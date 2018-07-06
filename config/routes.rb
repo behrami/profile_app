@@ -15,8 +15,9 @@ Rails.application.routes.draw do
   end
 
   # routes to create and edit stuff
-  resource :user, only: %i[new create edit update]
+  resource :user, only: %i[new create]
   resource :session, only: %i[new create destroy] do
+    resource :user, only: %i[edit update]
     resources :blogs, only: %i[new create edit update destroy]
   end
 

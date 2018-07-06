@@ -10,6 +10,9 @@ class ResumesController < ApplicationController
 
   def create
     @resume = Resume.new
+    user_id = params[:user_id]
+
+    @resume.user_id = user_id
   end
 
   def edit
