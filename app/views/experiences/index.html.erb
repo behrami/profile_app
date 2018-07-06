@@ -1,0 +1,8 @@
+<ul>
+  <% @experiences.each do |experience| %>
+    <li>
+      Title: <%= experience.name %><br>
+      Info: <%= experience.summary %>
+    </li>
+  <% end %>
+</ul>

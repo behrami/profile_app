@@ -1,0 +1,8 @@
+<ul>
+  <% @projects.each do |project| %>
+    <li>
+      Name: <%= project.name %><br>
+      Summary: <%= project.summary %>
+    </li>
+  <% end %>
+</ul>

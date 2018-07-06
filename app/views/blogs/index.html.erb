@@ -1,0 +1,9 @@
+<ul>
+
+  <% @blogs.each do |blog| %>
+  <li>
+    Title: <%= link_to blog.title, user_blog_path(blog, @user_id) %><br>
+  </li>
+  <% end %>
+
+</ul>

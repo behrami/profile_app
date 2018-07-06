@@ -19,6 +19,7 @@ puts 'Deleted previous seeds'
 User.create([
             { first_name:'Behram',
               last_name:'Irani',
+              picture:'https://media.licdn.com/dms/image/C4D03AQFA_GQnn7Yw-w/profile-displayphoto-shrink_200_200/0?e=1536192000&v=beta&t=_nE3ICtVVWyVoQc3-76v3gNwcxFViuQ3BvP4FT_ElQg',
               title:'Freelance Web Developer',
               summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis tellus ut risus eleifend ultricies. Aliquam bibendum quis nunc et pharetra. Phasellus felis libero, viverra ac purus et, faucibus blandit dolor. Praesent quis felis ligula. Praesent ornare pellentesque facilisis. Nam pellentesque commodo rutrum. Etiam erat turpis, feugiat imperdiet dignissim non, rutrum ac sapien. Sed pulvinar gravida urna et efficitur. Aenean at mi odio. Phasellus vel varius diam. Mauris fermentum porttitor lacus, sed porta tortor tincidunt nec. Praesent luctus porttitor metus, nec faucibus libero bibendum et.',
               phone:'647-784-8982',

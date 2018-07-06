@@ -1,0 +1,11 @@
+<%= image_tag @picture%><br>
+First name: <%= @first_name %><br>
+Last name: <%= @last_name %><br>
+Title: <%= @title %><br>
+Profile summary: <%= @summary %><br>
+Phone number: <%= @phone %><br>
+Email: <%= @email %><br>
+LinkedIn: <%= link_to @linkedin, @linkedin %><br>
+Github: <%= link_to @github, @github %><br>
+Location: <%= @address %><br>
+<%= link_to 'Blogs', user_blogs_path(@user) %> | <%= link_to 'Resume', user_resume_path(@user) %>
