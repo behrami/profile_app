@@ -44,6 +44,37 @@
     <%= f.password_field :password_confirmation, placeholder: 'Confirm Password', class: "form-control" %>
   </p>
 
+  <%= f.fields_for :resume do |g| %>
+
+    <%= g.fields_for :skill do |h| %>
+      <p>
+        <%= h.text_field :name, placeholder: 'Skill Name', class: "form-control" %>
+      </p>
+    <% end %>
+
+    <%= g.fields_for :experience do |i| %>
+      <p>
+        <%= i.text_field :name, placeholder: 'Experience Name', class: "form-control" %>
+        <%= i.text_field :summary, placeholder: 'Experience Summary', class: "form-control" %>
+      </p>
+    <% end %>
+
+    <%= g.fields_for :project do |j| %>
+      <p>
+        <%= j.text_field :name, placeholder: 'Project Name', class: "form-control" %>
+        <%= j.text_field :summary, placeholder: 'Project Summary', class: "form-control" %>
+      </p>
+    <% end %>
+
+    <%= g.fields_for :education do |k| %>
+      <p>
+        <%= k.text_field :name, placeholder: 'Education Name', class: "form-control" %>
+        <%= k.text_field :school_name, placeholder: 'School Name', class: "form-control" %>
+      </p>
+    <% end %>
+
+  <% end%>
+
   <p>
     <%= f.submit 'Sign Up', class: "btn btn-primary", id: "signUpSubmit" %>
   </p>
