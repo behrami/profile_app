@@ -28,11 +28,10 @@ class UsersController < ApplicationController
     @user.summary = params[:user][:summary]
     @user.picture = params[:user][:picture]
     @user.title = params[:user][:title]
-    @user.linkedin = params[:user][:linkiedin]
+    @user.linkedin = params[:user][:linkedin]
     @user.github = params[:user][:github]
     @user.password = params[:user][:password]
     @user.password_confirmation = params[:user][:password_confirmation]
-    @user.profession_id = params[:user][:profession_id]
 
     if @user.save
       flash.now[:notice] = 'Successful Sign Up'

@@ -1,0 +1,34 @@
+<%= form_for :resume, url: session_user_resume_path, method: :post, html: {id: 'newResumeForm'} do |f| %>
+
+  <%= f.fields_for :skill do |g| %>
+    <p>
+      <%= g.text_field :name, placeholder: 'Skill Name', class: "form-control" %>
+    </p>
+  <% end %>
+
+  <%= f.fields_for :experience do |h| %>
+    <p>
+      <%= h.text_field :name, placeholder: 'Experience Name', class: "form-control" %>
+      <%= h.text_field :summary, placeholder: 'Experience Summary', class: "form-control" %>
+    </p>
+  <% end %>
+
+  <%= f.fields_for :project do |i| %>
+    <p>
+      <%= i.text_field :name, placeholder: 'Project Name', class: "form-control" %>
+      <%= i.text_field :summary, placeholder: 'Project Summary', class: "form-control" %>
+    </p>
+  <% end %>
+
+  <%= f.fields_for :education do |j| %>
+    <p>
+      <%= j.text_field :name, placeholder: 'Education Name', class: "form-control" %>
+      <%= j.text_field :school_name, placeholder: 'School Name', class: "form-control" %>
+    </p>
+  <% end %>
+
+  <p>
+    <%= f.submit 'Create Resume', class: "btn btn-primary", id: "resumeSubmit" %>
+  </p>
+
+<% end%>

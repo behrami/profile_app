@@ -9,4 +9,22 @@ class BlogsController < ApplicationController
     id = params[:id]
     @blog = Blog.find_by(id: id)
   end
+
+  def new
+    @blog = Blog.new
+  end
+
+  def create
+    @blog = Blog.new
+    @blog.user_id = current_user.id
+    @blog.title = params[:blog][:title]
+    @blog.summary = params[:blog][:summary]
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
 end

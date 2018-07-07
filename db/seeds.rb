@@ -41,7 +41,7 @@ puts 'Resumes Created'
 
 Experience.create([
                   {
-                    resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                    resume_id:User.find_by(first_name: 'Behram').resume.id,
                     name:'Geek Squad',
                     summary: 'Geek Squad Summary.'
                   }
@@ -51,22 +51,22 @@ puts 'Experiences created'
 
 Project.create([
                 {
-                  resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                  resume_id:User.find_by(first_name: 'Behram').resume.id,
                   name:'Travel App',
                   summary: 'App that helps you decide where to travel to based on month selection. Also helps you books hotels based on the place you are going to.'
                 },
                 {
-                  resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                  resume_id:User.find_by(first_name: 'Behram').resume.id,
                   name:'Freelance Booking App',
                   summary: 'Platform that helps you view and book freelancers from multiple professions based on location selection.'
                 },
                 {
-                  resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                  resume_id:User.find_by(first_name: 'Behram').resume.id,
                   name:'Photgur App',
                   summary: 'This app is a simple version of imgur where users can sign in and paste a link to a picture which will show up on home page. User can also edit pictures if they are the owners.'
                 },
                 {
-                  resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                  resume_id:User.find_by(first_name: 'Behram').resume.id,
                   name:'Profile App',
                   summary: 'A platform that helps people create thier professional profile online.'
                 }
@@ -76,12 +76,12 @@ puts 'Projects created'
 
 Education.create([
                   {
-                    resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                    resume_id:User.find_by(first_name: 'Behram').resume.id,
                     name:'Full-Stack Web Developement Immersive',
                     school_name:'Bitmaker'
                   },
                   {
-                    resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                    resume_id:User.find_by(first_name: 'Behram').resume.id,
                     name:'Software Engineering and Game Design',
                     school_name:'McMaster University'
                   }
@@ -91,47 +91,47 @@ puts 'Educations created'
 
 Skill.create([
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'HTML'
               },
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'CSS'
               },
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'SASS'
               },
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'Ruby'
               },
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'Rails'
               },
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'Postgresql'
               },
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'Javascript'
               },
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'AJAX'
               },
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'Git'
               },
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'Github'
               },
               {
-                resume_id:User.find_by(first_name: 'Behram').resumes.first.id,
+                resume_id:User.find_by(first_name: 'Behram').resume.id,
                 name:'Bootstrap'
               },
             ])

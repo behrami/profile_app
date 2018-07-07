@@ -18,6 +18,10 @@
 
   <body>
 
+    <% if current_user && !User.find_by(id: current_user.id).resume %>
+      <%= link_to 'Create Resume', new_session_user_resume_path %>
+    <% end %>
+
     <% if current_user %>
       <%= link_to 'Sign Out', session_path, method: :delete %>
     <% else %>

@@ -8,4 +8,11 @@ Email: <%= @email %><br>
 LinkedIn: <%= link_to @linkedin, @linkedin %><br>
 Github: <%= link_to @github, @github %><br>
 Location: <%= @address %><br>
-<%= link_to 'Blogs', user_blogs_path(@user) %> | <%= link_to 'Resume', user_resume_path(@user) %>
+
+<% if User.find_by(id: @user.id).blogs.first %>
+  <%= link_to 'Blogs', user_blogs_path(@user) %>
+<% end %>
+ |
+<% if User.find_by(id: @user.id).resume %>
+  <%= link_to 'Resume', user_resume_path(@user) %>
+<% end %>
